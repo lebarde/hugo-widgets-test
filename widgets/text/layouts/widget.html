@@ -1,0 +1,5 @@
+{{- if isset . "content" -}}
+  {{- .content | safeHTML -}}
+{{- else -}}<pre>Here is a text widget, but there is nothing to print. Please define options.content inside every text widget in your config.</pre>
+{{- end -}}
+{{ $ }}

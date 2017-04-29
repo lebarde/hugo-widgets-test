@@ -1,0 +1,31 @@
+baseurl: "http://replace-this-with-your-hugo-site.com/"
+title: "My New Hugo Site"
+languageCode: "en-us"
+theme: "hemingway"
+
+widgets:
+  sidebar:
+    - type: text
+      options:
+        content: "<h1>IT WORKS from config</h1>"
+        parser: html
+    - type: taxt
+      options:
+        content: "This is a taxt widget"
+    - type: img
+  showcase:
+    - type: img
+    - type: text
+      options:
+        content: "Here lies a showcase."
+  footer:
+    - type: text
+      options:
+        content: "Powered by Hugo with widgets. Adrien Poupin."
+        foo: bar
+    - type: img
+            
+  
+params:
+  widgetize:
+    widgetareabefore: "aside"
