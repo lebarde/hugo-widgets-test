@@ -1,31 +1,49 @@
 baseurl: "http://replace-this-with-your-hugo-site.com/"
 title: "My New Hugo Site"
 languageCode: "en-us"
-theme: "hemingway"
+theme: "hugo-material-docs"
 
 widgets:
+  menu:
+    - type: menu
+      options:
+        id: menu.main
+        
   sidebar:
     - type: text
       options:
-        content: "<h1>IT WORKS from config</h1>"
+        content: "Booh"
         parser: html
-    - type: taxt
+    - type: figure
       options:
-        content: "This is a taxt widget"
-    - type: img
+        url: "/img/icon_writing.png"
+        caption: "This is a figure with steroids."
+
   showcase:
-    - type: img
+    - type: figure
+      options:
+        url: "/img/icon_writing.png"
+        caption: "This is a figure with steroids."
     - type: text
       options:
-        content: "Here lies a showcase."
+        content: "(Here lies a showcase.)"
   footer:
     - type: text
       options:
-        content: "Powered by Hugo with widgets. Adrien Poupin."
-        foo: bar
-    - type: img
-            
+        content: "<h3>Powered by Hugo with widgets. Adrien Poupin.<h3>"
   
 params:
   widgetize:
     widgetareabefore: "aside"
+  palette:
+    primary: "deep-purple"
+    accent: "red"
+  footer:
+    copyright: "[Mathématiques - Adrien Poupin](http://topologix.fr). Licence CC-BY-NC."
+
+ 
+menu:
+  main:
+    - name: "Home"
+      url: "/"
+      weight: 0

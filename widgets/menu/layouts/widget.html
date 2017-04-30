@@ -1,0 +1,12 @@
+{{- if isset .Params "id" -}}
+<nav aria-label="Navigation">
+  <ul>
+    {{- with .Site.Menus.$Params.id -}}
+    cici
+      {{- range .ByWeight -}}
+        coucou
+      {{- end -}}
+    {{- end -}}
+  </ul>
+</nav>
+{{- end -}}

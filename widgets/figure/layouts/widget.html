@@ -1,0 +1,8 @@
+<div style="text-align: center">
+{{- if isset .Params "url" -}}
+  <img src="{{- .Params.url | safeURL -}}" />
+{{- end -}}
+{{- if isset .Params "caption" -}}
+  <div class="caption">{{- .Params.caption | safeHTML -}}</div>
+{{- end -}}
+</div>
